@@ -11,6 +11,7 @@ packages:
   gitServerName: johnpcarter_shared
   gitUrl: https://github.com/johnpcarter
   gitUsername: johnpcarter
+  gitBranch: main
   gitTag: v1.0.0
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
