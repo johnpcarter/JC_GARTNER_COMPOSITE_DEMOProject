@@ -6,6 +6,6 @@
   <!-- nodes -->
 
 <INVOKE NAME="JcHelloWorldAPI" SERVICE="jc.helloworld.pub:greet">
-  <COMMENT></COMMENT>
+  <COMMENT>demo</COMMENT>
 </INVOKE>
 </FLOW>
