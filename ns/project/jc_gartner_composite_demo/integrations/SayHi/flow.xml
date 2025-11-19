@@ -5,10 +5,6 @@
 
   <!-- nodes -->
 
-<INVOKE NAME="JcHelloWorldAPI" SERVICE="jc.helloworld.pub:greet">
-  <COMMENT>demo</COMMENT>
-</INVOKE>
-
 <INVOKE NAME="Flow" SERVICE="pub.flow:debugLog">
   <COMMENT></COMMENT>
 
@@ -114,5 +110,9 @@
 <MAP MODE="OUTPUT">
   <COMMENT></COMMENT>
 </MAP>
+</INVOKE>
+
+<INVOKE NAME="JcHelloWorldAPI" SERVICE="jc.helloworld.pub:greet">
+  <COMMENT>demo</COMMENT>
 </INVOKE>
 </FLOW>
