@@ -5,10 +5,6 @@
 
   <!-- nodes -->
 
-<INVOKE NAME="JcHelloWorldAPI" SERVICE="jc.helloworld.pub:greet">
-  <COMMENT>demo</COMMENT>
-</INVOKE>
-
 <INVOKE NAME="Flow" SERVICE="pub.flow:debugLog">
   <COMMENT></COMMENT>
 
@@ -115,4 +111,16 @@
   <COMMENT></COMMENT>
 </MAP>
 </INVOKE>
+
+<SEQUENCE NAME="IF" EXIT-ON="FAILURE" CONDITION="((%/name%))" FORM="IF">
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+</SEQUENCE>
+
+<INVOKE NAME="JcHelloWorldAPI" SERVICE="jc.helloworld.pub:greet">
+  <COMMENT>demo</COMMENT>
+</INVOKE>
+</SEQUENCE>
 </FLOW>
